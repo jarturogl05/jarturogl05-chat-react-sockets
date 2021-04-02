@@ -1,0 +1,59 @@
+.login-container {
+  display: grid;
+  gap: 10px;
+  grid-template: "login-form";
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  grid-area: login-form;
+  display: grid;
+  margin: 2em;
+}
+
+.login-form_label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.login-form_input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 0.3em;
+
+
+}
+
+
+.button-container button {
+    width: 110px;
+    height: 35px;
+  display: inline-block;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.button-container button:hover{
+    color:#000000;
+    background-color: white;
+    border: 0.1em solid black;
+    cursor: pointer;
+
+}
+
+.login-button {
+  background-color: #0767cd;
+  color: white;
+}
+
+.new-button {
+  background-color: gray;
+  color: white;
+}

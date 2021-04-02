@@ -1,0 +1,81 @@
+.Sidebar-container{
+    display: none;
+    grid-area: Sidebar;
+}
+
+
+.sidebar-content{
+    overflow: auto;
+
+}
+
+
+.sidebar-buttons{
+    text-align: end;
+}
+
+.sidebar-buttons button{
+    margin-left: 20px;
+    padding: 10px;
+
+
+    border: 0.1em solid black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    transition: all 0.2s;
+    
+
+    background-color: #0767cd ;
+    color: white;
+}
+
+.Sidebar-Info {
+    font-size: 1.5rem;
+    bottom: 0;
+    align-self: end;
+    display: grid;
+
+}
+
+.Sidebar-Info Button {
+    padding: 20px;
+
+
+    border: 0.1em solid black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    transition: all 0.2s;
+    
+
+    background-color: #0767cd;
+    color: white;
+}
+
+.Sidebar-Info Button:hover{
+    color:#000000;
+    background-color: white;
+    border: 0.1em solid black;
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width :600px){
+    
+    .Sidebar-container{
+        display: grid;
+     
+    }
+}
+
+
+@media (min-width :900px){
+    .Sidebar-container{
+        display: grid;
+    
+    }
+    
+}

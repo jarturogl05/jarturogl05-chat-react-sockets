@@ -1,0 +1,48 @@
+.dashboard-container{
+    
+    display: grid;
+    grid-template: 
+        'Content' 100vh
+    ;
+
+}
+
+.contenido{
+    grid-area: Content;
+    background-color: rgb(206, 197, 151);
+    display: inline-block;
+    
+}
+
+.ola{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+
+@media (min-width :600px){
+    
+    .dashboard-container{
+        display: grid;
+        grid-template: 
+            'Sidebar Content' 100vh / 25%
+    }
+}
+
+
+@media (min-width :900px){
+    .dashboard-container{
+
+        /* grid-template-areas: 
+            'Sidebar Content';
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 3fr ; */
+
+        display: grid;
+        grid-template: 
+            'Sidebar Content' 100vh / 25%
+        ;
+    }
+    
+}
