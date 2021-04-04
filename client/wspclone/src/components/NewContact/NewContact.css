@@ -1,0 +1,44 @@
+.newContact_form{
+    display: grid;
+}
+
+
+.newContact_form label{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.newContact_form input {
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 0.3em;
+    place-self: center;
+}
+
+.newContact_form button{
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    width: 20%;
+    margin-top: 30px;
+    margin-left: 20px;
+
+
+    border: 0.1em solid black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+
+.newContact_form Button:hover{
+    color:#000000;
+    background-color: white;
+    border: 0.1em solid black;
+    cursor: pointer;
+}
