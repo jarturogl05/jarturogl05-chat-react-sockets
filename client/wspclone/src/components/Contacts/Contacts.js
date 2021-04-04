@@ -1,10 +1,13 @@
 import React,{useState} from 'react'
 import './Contacts.css'
-import { useSpring, animated } from 'react-spring'
+import { useSpring, animated } from 'react-spring';
+import { useContacts } from '../../context/ContactsProvider';
 
 
 export default function Contacts() {
     //const props = useSpring({opacity: 1, from: {opacity: 0}})
+    const {contacts} = useContacts();
+
 
     const props = useSpring({
         opacity: 1,
@@ -14,26 +17,17 @@ export default function Contacts() {
     return (
         <animated.div style={props}>
         <div >
-            <h1>Contacts</h1>            
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
-            <h1>Contacts</h1>
+            {
+                contacts.map((contact) =>(
+                    <div>
+                         <h1>{contact.name}</h1>
+                         <hr></hr>
+                    </div>
+                    
+                ))
+        
+            }
+        
 
         </div>
         </animated.div>

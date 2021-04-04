@@ -14,34 +14,7 @@ export default function Conversations() {
         <animated.div style={props}>
 
         <div className='conversation-container'>
-            <h1>chats</h1>            
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-            <h1>chats</h1>
-
+ 
         </div>
         </animated.div>
 

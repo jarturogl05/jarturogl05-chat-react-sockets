@@ -1,12 +1,14 @@
 .Sidebar-container{
     display: none;
     grid-area: Sidebar;
+    
 }
 
 
 .sidebar-content{
     overflow: auto;
     margin: 10px;
+    height: 100%;
 }
 
 
@@ -51,6 +53,8 @@
 
     background-color: #0767cd;
     color: white;
+
+
 }
 
 .Sidebar-Info Button:hover{
@@ -78,7 +82,7 @@
     
     .Sidebar-container{
         display: grid;
-     
+        grid-template-rows: 5% 70% auto;
     }
 }
 
@@ -86,7 +90,8 @@
 @media (min-width :900px){
     .Sidebar-container{
         display: grid;
-    
+        grid-template-rows: 5% 70% auto;
+
     }
     
 }
