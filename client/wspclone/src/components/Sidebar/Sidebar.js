@@ -22,7 +22,7 @@ export default function Sidebar( {id}) {
 
     const [selection, setselection] = useState('chats');
     const [modalStatus, setModalStatus] = useState(false)
-    const ConversationsIsOpen = selection === 'chats';
+    const ConversationsIsOpen = selection === 'chats'; //true- false
 
     function closeModal(){
 
@@ -68,6 +68,7 @@ export default function Sidebar( {id}) {
 
             </div>
             <ReactModal
+            closeTimeoutMS={200}
             isOpen={modalStatus}
             onRequestClose={closeModal}
             style={customStyles}>
