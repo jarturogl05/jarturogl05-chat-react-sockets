@@ -46,10 +46,10 @@ export default function Sidebar( {id}) {
 
     function selectionContentModal(){
         if(selection === 'chats'){
-            return < NewConversation/>
+            return < NewConversation closeModal={closeModal}/>
         }
         else{
-            return <NewContact/>
+            return <NewContact closeModal={closeModal} />
         }
     }
 
