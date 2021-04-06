@@ -19,7 +19,7 @@ export default function Contacts() {
         <div >
             {
                 contacts.map((contact) =>(
-                    <div>
+                    <div key={contact.id}>
                          <h1>{contact.name}</h1>
                          <hr></hr>
                     </div>

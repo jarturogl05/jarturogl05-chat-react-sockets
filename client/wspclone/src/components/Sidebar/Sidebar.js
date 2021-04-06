@@ -68,6 +68,7 @@ export default function Sidebar( {id}) {
 
             </div>
             <ReactModal
+            ariaHideApp={false}
             closeTimeoutMS={200}
             isOpen={modalStatus}
             onRequestClose={closeModal}
