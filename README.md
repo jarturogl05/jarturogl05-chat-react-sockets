@@ -1,2 +1,2 @@
 # jarturogl05-chat-react-sockets
-chat app whit react and sockets
+chat app with react and sockets
