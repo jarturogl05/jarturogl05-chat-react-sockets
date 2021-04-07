@@ -10,24 +10,22 @@ export default function NewConversation({closeModal}) {
 
   function handleSumbit(e) {
     e.preventDefault();
-
-    createConversation(setselectedContacts);
+    createConversation(selectedContacts);
     closeModal();
 
   }
 
   function handleChecboxChange(contactId) {
-    // setselectedContacts((prevSelectedContactsID) => {
-    //   if (prevSelectedContactsID.includes(contactId)) {
-    //     return prevSelectedContactsID.filter((prevId) => {
-    //       return contactId !== prevId;
-    //     });
-    //   } else {
-    //     return [...prevSelectedContactsID, contactId];
-    //   }
-    // });
+    setselectedContacts((prevSelectedContactsID) => {
+      if (prevSelectedContactsID.includes(contactId)) {
+        return prevSelectedContactsID.filter((prevId) => {
+          return contactId !== prevId;
+        });
+      } else {
+        return [...prevSelectedContactsID, contactId];
+      }
+    });
 
-    setselectedContacts(contactId);
   }
 
   return (
@@ -37,7 +35,6 @@ export default function NewConversation({closeModal}) {
         {contacts.map((contact) => (
           <div key={contact.id}>
             <input
-              value={selectedContacts.includes(contact.id)}
               type="checkbox"
               id={contact.id}
               onChange={() => handleChecboxChange(contact.id)}
