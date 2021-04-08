@@ -12,7 +12,7 @@ export function useConversations(){
 export function ConversationsProvider({children}) {
 
     const [conversations, setConversations] = useLocalStorage('conversations', []);
-    const [selectedConversationIndex, setSelectedConversationIndex] = useState(0);
+    const [selectedConversationIndex, setSelectedConversationIndex] = useState('');
     const {contacts} = useContacts();
 
     function createConversation(recipients){

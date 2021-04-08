@@ -11,6 +11,7 @@ export default function Dashboard({id}) {
         <div className='dashboard-container'>
             <Sidebar id={id}/>
             <div className='contenido'>
+                {console.log(selectedConversation)}
                 {selectedConversation && <OpenConversation/>}
             </div>
         </div>

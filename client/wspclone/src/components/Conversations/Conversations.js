@@ -24,8 +24,9 @@ export default function Conversations() {
             }`}
             key={index}
             onClick={() => {
-              setIsSelected(index);
-              selectedConversationIndex(index);
+              
+              selectedConversationIndex(index)
+              setIsSelected(index)
             }}
           >
             <p>{conversation.recipients.map((r) => r.name).join(",")}</p>
