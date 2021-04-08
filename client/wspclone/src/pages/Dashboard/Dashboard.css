@@ -9,16 +9,12 @@
 
 .contenido{
     grid-area: Content;
-    background-color: rgb(206, 197, 151);
-    display: inline-block;
+    background-color: rgb(166, 228, 207);
+    display: grid;
     
 }
 
-.ola{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
+
 
 
 @media (min-width :600px){
@@ -26,7 +22,7 @@
     .dashboard-container{
         display: grid;
         grid-template: 
-            'Sidebar Content' 100vh / 25%
+            'Sidebar Content' 100vh / 30%
     }
 }
 
