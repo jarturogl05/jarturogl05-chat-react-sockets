@@ -1,3 +1,15 @@
+.conversation_title{
+    font-size: 1.4rem;
+    padding: 1px;
+    padding-left: 15px;
+    border-bottom: 1px solid black;
+
+}
+
+
 .conversation_title:hover{
     cursor: pointer;
+    background: blue;
+    color: white;
 }
+
