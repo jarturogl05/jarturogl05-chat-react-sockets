@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './Contacts.css'
 import { useSpring, animated } from 'react-spring';
 import { useContacts } from '../../context/ContactsProvider';
@@ -19,9 +19,8 @@ export default function Contacts() {
         <div >
             {
                 contacts.map((contact) =>(
-                    <div key={contact.id}>
-                         <h1>{contact.name}</h1>
-                         <hr></hr>
+                    <div key={contact.id} className='contact_title'>
+                         <p>{contact.name}</p>
                     </div>
                     
                 ))
