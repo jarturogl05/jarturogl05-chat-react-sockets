@@ -3,9 +3,17 @@
     padding: 1px;
     padding-left: 15px;
     border-bottom: 1px solid black;
-
 }
 
+
+.conversation_title_click{
+    font-size: 1.4rem;
+    padding: 1px;
+    padding-left: 15px;
+    border-bottom: 1px solid black;
+    background: blue;
+    color: white;
+}
 
 .conversation_title:hover{
     cursor: pointer;

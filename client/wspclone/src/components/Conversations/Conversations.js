@@ -1,15 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Conversations.css";
 import { useSpring, animated } from "react-spring";
 import { useConversations } from "../../context/ConversationsProvider";
 
 export default function Conversations() {
   const { conversations, selectedConversationIndex } = useConversations();
-
- 
-
-
-
+  const [isSelected, setIsSelected] = useState('')
 
   const props = useSpring({
     opacity: 1,
@@ -21,14 +17,18 @@ export default function Conversations() {
       <div>
         {conversations.map((conversation, index) => (
           <div
-            className="conversation_title"
+            className={`${
+              isSelected !== index
+                ? "conversation_title"
+                : "conversation_title_click"
+            }`}
             key={index}
             onClick={() => {
-              selectedConversationIndex(index)
+              setIsSelected(index);
+              selectedConversationIndex(index);
             }}
-           
           >
-          <p>{conversation.recipients.map((r) => r.name).join(",")}</p>
+            <p>{conversation.recipients.map((r) => r.name).join(",")}</p>
           </div>
         ))}
       </div>
