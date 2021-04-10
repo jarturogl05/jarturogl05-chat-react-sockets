@@ -16,5 +16,32 @@
 
 .form-area{
     grid-area: form-area;
-    background-color: red;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.text-area-chat{
+    
+    height: 45px;
+    width: 80%;
+  
+    font-size: 1.5rem;
+    resize: none;
+}
+
+.button-chat{
+   
+    height: 51px;
+    width: 10%;
+    vertical-align: top;
+
+    border: 0.1em solid black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    transition: all 0.2s;
+    
+
+    background-color: #0767cd;
+    color: white;
 }
