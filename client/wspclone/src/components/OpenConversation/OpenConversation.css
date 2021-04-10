@@ -1,3 +1,20 @@
+.conversation-content{
+    display: grid;
+    grid-template-areas: 
+        'chat-area'
+        'form-area';
+
+    grid-template-rows: 90vh auto;
+}
+
 .chat{
+    grid-area: chat-area;
     overflow: auto;
+    background-color:antiquewhite ;
+    
+}
+
+.form-area{
+    grid-area: form-area;
+    background-color: red;
 }
